@@ -1,0 +1,133 @@
+/* Galeria
+------------------------------------------------------------------------- */
+.galeria {
+  padding: 5rem 0;
+
+  h2 {
+    color: $green-200;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .slideGaleria {
+    margin-top: 2rem;
+  }
+
+  .nav-tabs {
+    border: 0;
+    justify-content: center;
+    margin-bottom: .5rem;
+
+    .nav-link {
+      margin: 0 .5rem;
+      padding: .5rem 2rem;
+      color: $green-200;
+      border-radius: 8px;
+      border: 1px solid $green-200;
+
+      &.active {
+        color: #D4A849;
+        border: 1px solid #D4A849;
+      }
+      &:hover {
+        color: $green-100;
+        border: 1px solid $green-100;
+      }
+    }
+  }
+
+  .slider_galeria {
+    .slick-slide {
+      background: #fff;
+      border-radius: 25px;
+      text-align: center;
+
+      img {
+        border-radius: 25px;
+      }
+    }
+  }
+
+  .slider-nav {
+    margin-top: 2rem;
+    
+    .slick-slide {
+      margin: 0 10px;
+
+      img {
+        margin: 0 auto;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .slick-arrow.slick-prev {
+    left: 0;
+  }
+  .slick-arrow.slick-next {
+    right: 0;
+  }
+
+  // -- 
+  @media (max-width: 1100px) {
+    padding: 3rem 0;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .slideGaleria {
+      margin-top: 0;
+    }
+
+    .nav-tabs {
+      .nav-link {
+        margin: .3rem;
+        padding: .2rem .5rem;
+        border-radius: 4px;
+        font-size: .9rem;
+      }
+    }
+
+    .slider_galeria {
+      .slick-slide {
+        border-radius: 15px;
+  
+        img {
+          border-radius: 15px;
+        }
+      }
+    }
+
+    .slider-nav {
+      margin-top: 1rem;
+      
+      .slick-slide {
+        margin: 0 5px;
+  
+        img {
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+  // -- 
+  @media (max-width: 991px) {
+    h2 {
+      font-size: 1.8rem;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  // -- 
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+}

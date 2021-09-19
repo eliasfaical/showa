@@ -1,0 +1,60 @@
+.wa__btn_popup {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  z-index: 999999999;
+
+  .wa__btn_popup_txt {
+    display: block;
+    position: absolute;
+    width: 190px;
+    right: 100%;
+    background-color: #f5f7f9;
+    font-size: 12px;
+    color: #43474e;
+    top: 5px;
+    padding: 7px;
+    margin-right: 7px;
+    letter-spacing: -0.03em;
+    border-radius: 4px;
+    transition: 0.4s ease all;
+  }
+
+  .wa__btn_popup_icon {
+    display: block;
+    width: 56px;
+    height: 56px;
+    background: #2db742;
+    border-radius: 50%;
+    box-shadow: 0px 6px 8px 2px rgba(0, 0, 0, 0.14);
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-size: 30px auto;
+      transition: 0.4s ease all;
+      background: transparent url(./assets/images/whatsapp_logo.svg) center center no-repeat;
+    }
+
+    &:after {
+      content: '';
+      opacity: 0;
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: transparent url(./assets/images/x_icon.svg) center center no-repeat;
+      background-size: 14px auto;
+      transition: 0.4s ease all;
+      transform: scale(0) rotate(-360deg);
+    }
+  }
+}

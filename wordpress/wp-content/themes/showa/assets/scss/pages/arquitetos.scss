@@ -1,0 +1,97 @@
+/* Arquitetos
+------------------------------------------------------------------------- */
+.arquitetos {
+  padding: 7rem 0 2rem;
+
+  .titleSection {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h2 {
+      color: $green-200;
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      text-align: center;
+    }
+  }
+
+  .box_arquitetos {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    height: 760px;
+    background: url(./assets/images/bg-empreendimentos.jpg) no-repeat center center;
+    
+    .item_arquiteto {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 10rem;
+
+      figure {
+        flex: 1;
+      }
+
+      .text {
+        flex: 2;
+        margin-left: 2rem;
+
+        h3 {
+          color: $green-200;
+          font-size: 1.2rem;
+          margin-bottom: .5rem;
+          text-transform: uppercase;
+        }
+
+        p {
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+
+  // ---
+  @media (max-width: 1366px) {
+    padding: 4rem 0 2rem;
+  }
+
+  // ---
+  @media (max-width: 991px) {
+    .titleSection {
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+
+    .box_arquitetos {
+      margin-top: 3rem;
+
+      .item_arquiteto {
+        padding-left: 0;
+      }
+    }
+  }
+
+  // ---
+  @media (max-width: 768px) {
+    .titleSection {
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+
+    .box_arquitetos {
+      height: auto;
+      background: none;
+      margin-top: 0;
+      padding: 2rem 0 0;
+
+      .item_arquiteto {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

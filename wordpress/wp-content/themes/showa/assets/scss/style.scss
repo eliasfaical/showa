@@ -1,0 +1,43 @@
+/*!
+  Theme Name: Showa
+  Theme URI: http://showa.com.br/
+  Author: Elias Faiçal
+  Author URI: Elias Faiçal - http://eliasfaical.com.br/
+  Description: Showa
+  Version: 1.0
+  License: GNU General Public License v2 or later
+  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+
+// Helpers
+@import 'helpers/fonts';
+@import 'helpers/colors';
+@import 'helpers/mixins';
+
+// components
+@import 'components/base';
+@import 'components/wordpress';
+@import 'components/button';
+@import 'components/contact-form';
+@import 'components/social-icons';
+
+// Header
+@import 'header/header';
+
+// Footer
+@import 'footer/footer';
+
+// Pages
+@import 'pages/pages';
+@import 'pages/home';
+@import 'pages/destaque';
+@import 'pages/video';
+@import 'pages/galeria';
+@import 'pages/detalhes';
+@import 'pages/arquitetos';
+@import 'pages/contato';

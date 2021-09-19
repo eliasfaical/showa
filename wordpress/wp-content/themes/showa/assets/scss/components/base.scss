@@ -1,0 +1,48 @@
+// Global
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: $blue-300;
+  line-height: 1.6;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'gothamlight', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+strong,
+b {
+  font-family: 'gothambold', sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'gothambold', sans-serif;
+}
+
+input, select, textarea {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}

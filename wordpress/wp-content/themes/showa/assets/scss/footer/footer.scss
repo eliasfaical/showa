@@ -1,0 +1,94 @@
+/* Footer
+------------------------------------------------------------------------------ */
+.site-footer {
+  .boxFooter {
+    padding: 2rem 0 1rem;
+    background: #F2FBFF;
+  }
+
+  .parceiros {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    span {
+      color: $green-200;
+      margin-right: 4rem;
+      display: block;
+      font-size: 1.2rem;
+    }
+  }
+
+  .listLogos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    li {
+      margin-right: 1.5rem;
+      padding-right: 1.5rem;
+      border-right: 1px solid #ccc;
+
+      &:last-child {
+        border-right: 0;
+        margin-right: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .rodape {
+    padding: .5rem 0;
+    text-align: center;
+    background: #C2AE95;
+
+    p {
+      margin: 0;
+      color: #fff;
+    }
+  }
+
+  // Responsive
+  @media (max-width: 768px) {
+    .parceiros {
+      margin-top: 1rem;
+      flex-direction: column;
+
+      span {
+        margin: 0 0 1rem;
+      }
+    }
+
+    .listLogos {
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      li {
+        width: 30%;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+    }
+    
+    .btn-default {
+      margin-bottom: 1rem;
+    }
+    
+    .socialIcons {
+      li {
+        margin: 0 1rem;
+      }
+    }
+
+    .rodape {
+      padding: .3rem 0;
+  
+      p {
+        font-size: .9rem;
+      }
+    }
+  }
+}

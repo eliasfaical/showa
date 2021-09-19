@@ -1,0 +1,19 @@
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    margin-left: 1.5rem;
+
+    a {
+      color: $green-200;
+      display: table;
+      font-size: 1.6rem;
+
+      &:hover {
+        color: $green-200;
+      }
+    }
+  }
+}

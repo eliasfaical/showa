@@ -1,0 +1,22 @@
+.btn-default {
+  border: 0;
+  border-radius: .4rem;
+  padding: .7rem 1.5rem;
+  color: #fff;
+  font-size: 1rem;
+  display: table;
+  text-align: center;
+  outline: none;
+  background: $green-200;
+  @include transition;
+
+  &:hover {
+    color: #fff;
+    background: $green-100;
+  }
+
+  @media (max-width: 768px) {
+    
+    padding: .6rem 1.8rem;
+  }
+}

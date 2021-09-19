@@ -1,0 +1,32 @@
+/* Banner - HOME
+------------------------------------------------------------------------- */
+.banner__hero {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
+  .slick-dots {
+    z-index: 10;
+    bottom: .8rem;
+
+    li {
+      button:before {
+        color: #CFCFCF;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  a {
+    outline: none;
+  }
+}
