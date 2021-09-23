@@ -1,5 +1,7 @@
 <section class="video">
   <div class="container">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-video.png" alt="" class="img-fluid">
+    <div class="ratio ratio-16x9">
+      <iframe src="https://www.youtube.com/embed/grBFMP3HDZA?rel=0" title="YouTube video" allowfullscreen></iframe>
+    </div>
   </div>
 </section>

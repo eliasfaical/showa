@@ -7,10 +7,18 @@
   background: url(./assets/images/bg-macro.png) no-repeat center center / cover;
 
   .container {
+    max-width: 1100px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .ratio {
+    iframe {
+      border-radius: 10px;
+      border: 3px solid #fff;
+    }
   }
 
   // -- 

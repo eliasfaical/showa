@@ -51,6 +51,79 @@
     });
   }
 
+
+  // Integrarção
+  // -------------------------------------------------------------------------
+  $('#wpcf7-f12-o1 .wpcf7-form').on('submit', function() {
+    
+    let dados = {
+      Key: "m6N_8OGtMEU1",
+      CampanhaKey: "QbaoSMHQV-01",
+      ProdutoKey: "kkzOGY9YF4k1",
+      CanalKey: "48rFsyJQqAE1",
+      Midia: "LP Showa",
+      Peca: "Formulario",
+      
+      PessoaNome: $("#pessoaNome").val(),
+      PessoaSobrenome: $("#pessoaSobrenome").val(),
+      PessoaEmail: $("#pessoaEmail").val(),
+      PessoaTelefones: $("#pessoaTelefone").val(),
+
+      KeyIntegradora:"9A35654C-E52F-4BA9-8B9D-1215FC1AE817",
+    }
+
+    console.log(dados);
+
+    $.ajax({
+      type: "POST",
+      url: 'https://crm.anapro.com.br/webcrm/webapi/integracao/v2/CadastrarProspect',
+      dataType: 'json',
+      // contentType: 'application/json',
+      headers: {
+        'Content-Type':'application/json'
+      },
+      data: JSON.stringify(dados),
+      success: function (data, textStatus, jQxhr) {
+        console.log(data);
+        console.log(textStatus);
+        console.log(jQxhr);
+      }
+    });
+
+    return false;
+  });
+
+
+  /* Envia o primeiro formulário
+  -------------------------------------------------------------------------- */
+  // $('.wp-curso-geral').submit(function() {
+  //   console.log('ETAPA 1');
+    
+  //   var dataparam = $('.wp-curso-geral').serialize();
+
+  //   var nome_lead = $('.nome_lead').val();
+
+  //   $.ajax({
+  //     type: 'POST',
+  //     async: true,
+  //     data: dataparam,
+  //     datatype: 'json',
+  //     url: 'http://crm.anapro.com.br/webcrm/webapi/integracao/v2/CadastrarProspect',
+  //     cache: true,
+  //     global: false,
+  //     beforeSend: function() {
+  //       $('.loader1').show();
+  //     },
+  //     success: function(html) {
+  //       $('.msg').html(html);
+  //     },
+  //     complete: function() {
+  //       $('.loader1').hide();
+  //     }
+  //   });
+  //   return false;
+  // });
+
 })(jQuery);
 
 document.body.addEventListener('touchstart', function () {}, false);
