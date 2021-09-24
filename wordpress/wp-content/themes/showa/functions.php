@@ -327,7 +327,7 @@ function wpdoc_customize_login_headertext( $headertext ) {
 function showa_scripts() {
   wp_enqueue_style('main-styles', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
 	
-	wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/js/lib/slick.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'carousel', get_template_directory_uri() . '/assets/js/lib/owl.carousel.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'scrollreveal', get_template_directory_uri() . '/assets/js/lib/scrollreveal.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/lib/bootstrap.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'maskedinput', get_template_directory_uri() . '/assets/js/lib/jquery.maskedinput.min.js', array('jquery'), '20151215', true );

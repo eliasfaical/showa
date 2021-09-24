@@ -1,7 +1,7 @@
 <footer id="colophon" class="site-footer">
     <div class="boxFooter">
       <div class="container d-flex flex-sm-row flex-column justify-content-between align-items-center">
-        <a href="https://goo.gl/maps/rhJPsaTAeaaGTcz48" target="_blank" rel="noopener noreferrer" class="btn-default" class="Estande de vendas">
+        <a href="https://goo.gl/maps/ewxyCWVX3D5G5Dos5" target="_blank" rel="noopener noreferrer" class="btn-default" class="Estande de vendas">
           Estande de vendas
         </a>
 
@@ -22,9 +22,10 @@
           ?>
         </ul>
       </div>
-
+            
       <div class="container parceiros">
-        <strong>Parceiros</strong>
+        <hr>
+
         <ul class="listLogos">
           <li>
             <span>Realização</span>
@@ -48,7 +49,7 @@
     
 		<div class="rodape">
       <div class="container">
-        <p>Rua São Paulo, 700, Praia da Costa - Vila Velha/ES</p>
+        <p>Rua São Paulo, 1845, Praia da Costa - Vila Velha/ES</p>
       </div>
 		</div>
 	</footer>

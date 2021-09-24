@@ -29,9 +29,32 @@
   </a>
 
 	<header id="masthead" class="site-header">
-		<div class="container">
-			<h1 class="site-title animateDown">
-        <?php the_custom_logo(); ?>
-      </h1>
+		<div class="container h-100">
+      <div class="row h-100">
+        <div class="col-md-3 col-6 my-auto">
+          <h1 class="site-title animateDown">
+            <?php the_custom_logo(); ?>
+          </h1>
+        </div>
+        <div class="col-md-9 col-6 my-auto">
+          <nav class="nav-main">
+            <ul>
+              <li><a href="#sobre-nos" title="Sobre nós">Sobre nós</a></li>
+              <li><a href="#empreendimento" title="Empreendimento">Empreendimento</a></li>
+              <li><a href="#diferenciais" title="Diferenciais">Diferenciais</a></li>
+              <li><a href="#arquitetos" title="Arquitetos">Arquitetos</a></li>
+              <li><a href="#fale-conosco" title="Fale conosco">Fale conosco</a></li>
+            </ul>
+          </nav>
+
+          <div class="menu-mobile">
+						<div class="nav-icon"> 
+							<span></span> 
+							<span></span> 
+							<span></span>
+						</div>
+					</div>
+        </div>
+      </div>
 		</div>
 	</header>

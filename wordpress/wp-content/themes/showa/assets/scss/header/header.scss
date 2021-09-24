@@ -18,14 +18,74 @@
 
   .site-title {
     margin: 0;
+
+    img {
+       max-width: 100%;
+       height: auto;
+    }
   }
 
-  @media screen and (max-width: 768px) {
+  // Menu principal
+  .nav-main {
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    li {
+      margin-left: 1rem;
+    }
+
+    a {
+      display: block;
+      color: $green-200;
+      text-transform: uppercase;
+      font-size: .9rem;
+      transition: color 0.25s ease-in-out;
+      font-family: 'gothambold';
+
+      &:hover {
+        color: $yellow-medium;
+      }
+    }
+  }
+
+
+  // Responsive
+  @media screen and (max-width: 991px) {
     padding: .5rem 0;
     
     .custom-logo {
       max-width: 170px;
       height: auto;
+    }
+
+    .nav-main {
+      top: 0;
+      left: -290px;
+      height: 100%;
+      width: 290px;
+      text-align: left;
+      position: fixed;
+      background: $yellow-medium;
+      @include transition();
+
+      > ul {
+        margin-top: 2rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        li {
+          width: 100%;
+          padding: .8rem;
+          margin: 0;
+          display: block;
+          border-bottom: 1px solid rgba($color: #fff, $alpha: .2);
+        }
+        a {
+          color: #000;
+        }
+      }
     }
   }
 }

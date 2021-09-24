@@ -1,168 +1,64 @@
 "use strict";
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 (function ($) {
-  // Banner Home
-  // -----------------------------------------------------------------
-  if ($('.slide_home').length > 0) {
-    $('.slide_home').slick({
-      dots: true,
+  // Open nav menu slide
+  // ----------------------------------------------------------------------------
+  $('.menu-mobile').on('click', function () {
+    $('.site-header').toggleClass('open');
+  });
+
+  if ($('#bannerHero').length > 0) {
+    $('#bannerHero').owlCarousel({
       loop: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      adaptiveHeight: true,
-      autoplay: true,
-      autoplaySpeed: 6000
-    });
-  } // Slide Áreas comuns
-  // -----------------------------------------------------------------
-
-
-  if ($('.galeria_areascomuns').length > 0) {
-    var _$$slick;
-
-    $('.galeria_areascomuns').slick((_$$slick = {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true
-    }, _defineProperty(_$$slick, "slidesToShow", 1), _defineProperty(_$$slick, "asNavFor", '.nav_areascomuns'), _$$slick));
-  }
-
-  if ($('.nav_areascomuns').length > 0) {
-    $('.nav_areascomuns').slick({
-      slidesToShow: 6,
-      slidesToScroll: 1,
-      asNavFor: '.galeria_areascomuns',
-      dots: false,
-      arrows: false,
-      centerMode: false,
-      focusOnSelect: true,
-      responsive: [{
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3
-        }
-      }]
-    });
-  } // Slide Áreas privativa
-  // -----------------------------------------------------------------
-
-
-  if ($('.galeria_privativa').length > 0) {
-    var _$$slick2;
-
-    $('.galeria_privativa').slick((_$$slick2 = {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true
-    }, _defineProperty(_$$slick2, "slidesToShow", 1), _defineProperty(_$$slick2, "asNavFor", '.nav_privativa'), _$$slick2));
-  }
-
-  if ($('.nav_privativa').length > 0) {
-    $('.nav_privativa').slick({
-      slidesToShow: 6,
-      slidesToScroll: 1,
-      asNavFor: '.galeria_privativa',
-      dots: false,
-      arrows: false,
-      centerMode: false,
-      focusOnSelect: true,
-      responsive: [{
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3
-        }
-      }]
-    });
-  } // Slide Plantas
-  // -----------------------------------------------------------------
-
-
-  if ($('.galeria_plantas').length > 0) {
-    var _$$slick3;
-
-    $('.galeria_plantas').slick((_$$slick3 = {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true
-    }, _defineProperty(_$$slick3, "slidesToShow", 1), _defineProperty(_$$slick3, "asNavFor", '.nav_plantas'), _$$slick3));
-  }
-
-  if ($('.nav_plantas').length > 0) {
-    $('.nav_plantas').slick({
-      slidesToShow: 6,
-      slidesToScroll: 1,
-      asNavFor: '.galeria_plantas',
-      dots: false,
-      arrows: false,
-      centerMode: false,
-      focusOnSelect: true,
-      responsive: [{
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3
-        }
-      }]
-    });
-  } // Slide localizacao
-  // -----------------------------------------------------------------
-
-
-  if ($('.galeria_localizacao').length > 0) {
-    var _$$slick4;
-
-    $('.galeria_localizacao').slick((_$$slick4 = {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true
-    }, _defineProperty(_$$slick4, "slidesToShow", 1), _defineProperty(_$$slick4, "asNavFor", '.nav_localizacao'), _$$slick4));
-  }
-
-  if ($('.nav_localizacao').length > 0) {
-    $('.nav_localizacao').slick({
-      slidesToShow: 6,
-      slidesToScroll: 1,
-      asNavFor: '.galeria_localizacao',
-      dots: false,
-      arrows: false,
-      centerMode: false,
-      focusOnSelect: true,
-      responsive: [{
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3
-        }
-      }]
+      margin: 0,
+      nav: false,
+      dots: true,
+      items: 1
     });
   }
-})(jQuery);
-"use strict";
 
-(function ($) {
-  // Animation
+  if ($('#galeriaAreasComuns').length > 0) {
+    $('#galeriaAreasComuns').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: true,
+      items: 1
+    });
+  }
+
+  if ($('#galeriaPrivativa').length > 0) {
+    $('#galeriaPrivativa').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: true,
+      items: 1
+    });
+  }
+
+  if ($('#galeriaPlantas').length > 0) {
+    $('#galeriaPlantas').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: true,
+      items: 1
+    });
+  }
+
+  if ($('#galeriaLocalizacao').length > 0) {
+    $('#galeriaLocalizacao').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: true,
+      items: 1
+    });
+  } // Animation
   // -------------------------------------------------------------------------
+
+
   ScrollReveal().reveal('.animateTop', {
     delay: 500,
     duration: 600,
@@ -239,33 +135,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     });
     return false;
+  }); // Scroll Smooth
+  // ----------------------------------------------------------------------------
+
+  $('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+    var target = this.hash;
+    var $target = $(target);
+    $('html, body').animate({
+      'scrollTop': $target.offset().top - 60
+    }, 1000, 'swing');
   });
-  /* Envia o primeiro formulário
-  -------------------------------------------------------------------------- */
-  // $('.wp-curso-geral').submit(function() {
-  //   console.log('ETAPA 1');
-  //   var dataparam = $('.wp-curso-geral').serialize();
-  //   var nome_lead = $('.nome_lead').val();
-  //   $.ajax({
-  //     type: 'POST',
-  //     async: true,
-  //     data: dataparam,
-  //     datatype: 'json',
-  //     url: 'http://crm.anapro.com.br/webcrm/webapi/integracao/v2/CadastrarProspect',
-  //     cache: true,
-  //     global: false,
-  //     beforeSend: function() {
-  //       $('.loader1').show();
-  //     },
-  //     success: function(html) {
-  //       $('.msg').html(html);
-  //     },
-  //     complete: function() {
-  //       $('.loader1').hide();
-  //     }
-  //   });
-  //   return false;
-  // });
 })(jQuery);
 
 document.body.addEventListener('touchstart', function () {}, false);

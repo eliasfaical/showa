@@ -1,4 +1,4 @@
-<section class="destaqueShowa">
+<section class="destaqueShowa" id="sobre-nos">
   <div class="container-destaque">
     <div class="boxText_destaque">
       <div class="animateTop">

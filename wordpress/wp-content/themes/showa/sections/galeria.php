@@ -1,4 +1,4 @@
-<section class="galeria">
+<section class="galeria" id="empreendimento">
   <div class="container">
     <h2>
       <?php the_field('titulo_galeria'); ?>
@@ -33,24 +33,16 @@
           <?php
             if( have_rows('fotos_areas_comuns') ) :
           ?>
-            <div class="slider_galeria galeria_areascomuns">
+            <div class="slider_galeria owl-carousel owl-theme galeria_areascomuns" id="galeriaAreasComuns">
               <?php
                 while( have_rows('fotos_areas_comuns') ) : the_row();
               ?>
-                <div>
+                <div class="item">
                   <img src="<?php the_sub_field('lista_fotos'); ?>" alt="" class="img-fluid">
                 </div>
               <?php
                 endwhile;
               ?>
-            </div>
-
-            <div class="slider-nav nav_areascomuns">
-              <?php while( have_rows('fotos_areas_comuns') ) : the_row(); ?>
-                <div>
-                  <img src="<?php the_sub_field('lista_fotos'); ?>" alt="" class="img-fluid">
-                </div>
-              <?php endwhile; ?>
             </div>
           <?php
             endif;
@@ -62,24 +54,16 @@
           <?php
             if( have_rows('fotos_areas_privativa') ) :
           ?>
-            <div class="slider_galeria galeria_privativa">
+            <div class="slider_galeria owl-carousel owl-theme galeria_privativa" id="galeriaPrivativa">
               <?php
                 while( have_rows('fotos_areas_privativa') ) : the_row();
               ?>
-                <div>
+                <div class="item">
                   <img src="<?php the_sub_field('lista_fotos'); ?>" alt="" class="img-fluid">
                 </div>
               <?php
                 endwhile;
               ?>
-            </div>
-
-            <div class="slider-nav nav_privativa">
-              <?php while( have_rows('fotos_areas_privativa') ) : the_row(); ?>
-                <div>
-                  <img src="<?php the_sub_field('lista_fotos'); ?>" alt="" class="img-fluid">
-                </div>
-              <?php endwhile; ?>
             </div>
           <?php
             endif;
@@ -91,24 +75,16 @@
           <?php
             if( have_rows('fotos_plantas') ) :
           ?>
-            <div class="slider_galeria galeria_plantas">
+            <div class="slider_galeria owl-carousel owl-theme galeria_plantas" id="galeriaPlantas">
               <?php
                 while( have_rows('fotos_plantas') ) : the_row();
               ?>
-                <div>
+                <div class="item">
                   <img src="<?php the_sub_field('lista_fotos'); ?>" alt="" class="img-fluid">
                 </div>
               <?php
                 endwhile;
               ?>
-            </div>
-
-            <div class="slider-nav nav_plantas">
-              <?php while( have_rows('fotos_plantas') ) : the_row(); ?>
-                <div>
-                  <img src="<?php the_sub_field('lista_fotos'); ?>" alt="" class="img-fluid">
-                </div>
-              <?php endwhile; ?>
             </div>
           <?php
             endif;
@@ -120,24 +96,16 @@
           <?php
             if( have_rows('fotos_localizacao') ) :
           ?>
-            <div class="slider_galeria galeria_localizacao">
+            <div class="slider_galeria owl-carousel owl-theme galeria_localizacao" id="galeriaLocalizacao">
               <?php
                 while( have_rows('fotos_localizacao') ) : the_row();
               ?>
-                <div>
+                <div class="item">
                   <img src="<?php the_sub_field('lista_fotos'); ?>" alt="" class="img-fluid">
                 </div>
               <?php
                 endwhile;
               ?>
-            </div>
-
-            <div class="slider-nav nav_localizacao">
-              <?php while( have_rows('fotos_localizacao') ) : the_row(); ?>
-                <div>
-                  <img src="<?php the_sub_field('lista_fotos'); ?>" alt="" class="img-fluid">
-                </div>
-              <?php endwhile; ?>
             </div>
           <?php
             endif;

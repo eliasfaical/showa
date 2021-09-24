@@ -1,4 +1,4 @@
-<section class="detalhesProjeto">
+<section class="detalhesProjeto" id="diferenciais">
   <div class="container-detalhes">
       <div class="col-descricao">
         <div class="boxDescricao">

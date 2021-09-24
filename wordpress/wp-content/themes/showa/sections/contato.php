@@ -1,4 +1,4 @@
-<section class="contato">
+<section class="contato" id="fale-conosco">
   <div class="container">
     <div class="animateTop">
       <h2>Viver bem é uma escolha. Faça a sua!</h2>

@@ -1,4 +1,4 @@
-<section class="arquitetos">
+<section class="arquitetos" id="arquitetos">
   <div class="titleSection">
     <div class="container">
       <h2 class="animateTop">

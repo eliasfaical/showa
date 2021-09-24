@@ -1,5 +1,61 @@
 (function($) {
 
+  // Open nav menu slide
+  // ----------------------------------------------------------------------------
+  $('.menu-mobile').on('click', function () {
+    $('.site-header').toggleClass('open');
+  });
+
+  if ($('#bannerHero').length > 0) {
+    $('#bannerHero').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: true,
+      items: 1
+    });
+  }
+
+  if ($('#galeriaAreasComuns').length > 0) {
+    $('#galeriaAreasComuns').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: true,
+      items: 1
+    });
+  }
+
+  if ($('#galeriaPrivativa').length > 0) {
+    $('#galeriaPrivativa').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: true,
+      items: 1
+    });
+  }
+
+  if ($('#galeriaPlantas').length > 0) {
+    $('#galeriaPlantas').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: true,
+      items: 1
+    });
+  }
+
+  if ($('#galeriaLocalizacao').length > 0) {
+    $('#galeriaLocalizacao').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: true,
+      items: 1
+    });
+  }
+
   // Animation
   // -------------------------------------------------------------------------
   ScrollReveal().reveal('.animateTop', { 
@@ -93,36 +149,18 @@
     return false;
   });
 
+  // Scroll Smooth
+  // ----------------------------------------------------------------------------
+  $('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
 
-  /* Envia o primeiro formulário
-  -------------------------------------------------------------------------- */
-  // $('.wp-curso-geral').submit(function() {
-  //   console.log('ETAPA 1');
-    
-  //   var dataparam = $('.wp-curso-geral').serialize();
+    var target = this.hash;
+    var $target = $(target);
 
-  //   var nome_lead = $('.nome_lead').val();
-
-  //   $.ajax({
-  //     type: 'POST',
-  //     async: true,
-  //     data: dataparam,
-  //     datatype: 'json',
-  //     url: 'http://crm.anapro.com.br/webcrm/webapi/integracao/v2/CadastrarProspect',
-  //     cache: true,
-  //     global: false,
-  //     beforeSend: function() {
-  //       $('.loader1').show();
-  //     },
-  //     success: function(html) {
-  //       $('.msg').html(html);
-  //     },
-  //     complete: function() {
-  //       $('.loader1').hide();
-  //     }
-  //   });
-  //   return false;
-  // });
+    $('html, body').animate({
+      'scrollTop': $target.offset().top - 60
+    }, 1000, 'swing');
+  });
 
 })(jQuery);
 

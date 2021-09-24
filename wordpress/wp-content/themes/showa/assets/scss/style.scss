@@ -11,13 +11,13 @@
 
 // Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap';
-@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
-@import '../../node_modules/slick-carousel/slick/slick.scss';
 
 // Helpers
 @import 'helpers/fonts';
 @import 'helpers/colors';
 @import 'helpers/mixins';
+@import 'helpers/owl.carousel.min';
+@import 'helpers/owl.theme.default.min';
 
 // components
 @import 'components/base';
@@ -28,6 +28,7 @@
 
 // Header
 @import 'header/header';
+@import 'header/nav';
 
 // Footer
 @import 'footer/footer';

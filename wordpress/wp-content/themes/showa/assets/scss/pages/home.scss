@@ -29,4 +29,12 @@
   a {
     outline: none;
   }
+
+  // carousel dots
+  .owl-theme .owl-nav.disabled+.owl-dots {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    bottom: 0;
+  }
 }
