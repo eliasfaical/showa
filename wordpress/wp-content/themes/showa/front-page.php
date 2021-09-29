@@ -15,7 +15,7 @@
       get_template_part( './sections/destaque' );
 
       // Video
-      get_template_part( './sections/video' );
+      // get_template_part( './sections/video' );
 
       // Galeria
       get_template_part( './sections/galeria' );

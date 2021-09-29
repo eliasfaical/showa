@@ -91,7 +91,7 @@
   // Maskedinput
   // -------------------------------------------------------------------------
   if ($('input[type="tel"]').length > 0) {
-    $('input[type="tel"]').mask('(99) 9999-9999?9').focusout(function(event) {
+    $('input[type="tel"]').mask('9999999999?9').focusout(function(event) {
       var target, phone, element;
 
       target  = (event.currentTarget) ? event.currentTarget : event.srcElement;
@@ -100,9 +100,9 @@
       element.unmask();
 
       if( phone.length > 10) {
-        element.mask("(99) 99999-999?9");
+        element.mask("9999999999?9");
       } else {
-        element.mask("(99) 9999-9999?9");
+        element.mask("9999999999?9");
       }
     });
   }
@@ -111,6 +111,9 @@
   // Integrarção
   // -------------------------------------------------------------------------
   $('#wpcf7-f12-o1 .wpcf7-form').on('submit', function() {
+
+    let ddd = $("#telefone").val().substring(0, 2);
+    let num = $("#telefone").val().substring(2, 12)
     
     let dados = {
       Key: "m6N_8OGtMEU1",
@@ -118,17 +121,24 @@
       ProdutoKey: "kkzOGY9YF4k1",
       CanalKey: "48rFsyJQqAE1",
       Midia: "LP Showa",
-      Peca: "Formulario",
+      Peca: "Formulário",
       
       PessoaNome: $("#pessoaNome").val(),
       PessoaSobrenome: $("#pessoaSobrenome").val(),
+      ValidarEmail: "false",
       PessoaEmail: $("#pessoaEmail").val(),
-      PessoaTelefones: $("#pessoaTelefone").val(),
+      PessoaTelefones: [ 
+        { 
+          Tipo:'OUTR',
+          DDD: ddd,
+          Numero: num,
+          Ramal:null
+        }
+      ],
+      // PessoaTelefones: $("#telefone").val(),
 
       KeyIntegradora:"9A35654C-E52F-4BA9-8B9D-1215FC1AE817",
     }
-
-    console.log(dados);
 
     $.ajax({
       type: "POST",

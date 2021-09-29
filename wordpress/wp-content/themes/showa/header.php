@@ -28,6 +28,10 @@
     <span>Atendimento <strong>online</strong></span>
   </a>
 
+  <a href="#fale-conosco" title="Saiba mais" class="btnSaibaMais_flutuante">
+    <i class="fas fa-hotel"></i> Saiba mais
+  </a>
+
 	<header id="masthead" class="site-header">
 		<div class="container h-100">
       <div class="row h-100">
@@ -39,11 +43,11 @@
         <div class="col-md-9 col-6 my-auto">
           <nav class="nav-main">
             <ul>
-              <li><a href="#sobre-nos" title="Sobre nós">Sobre nós</a></li>
-              <li><a href="#empreendimento" title="Empreendimento">Empreendimento</a></li>
+              <li><a href="#sobre-nos" title="Sobre o Showa">Sobre o Showa</a></li>
+              <li><a href="#empreendimento" title="o Empreendimento">O Empreendimento</a></li>
               <li><a href="#diferenciais" title="Diferenciais">Diferenciais</a></li>
-              <li><a href="#arquitetos" title="Arquitetos">Arquitetos</a></li>
-              <li><a href="#fale-conosco" title="Fale conosco">Fale conosco</a></li>
+              <li><a href="#arquitetos" title="Projetos">Projetos</a></li>
+              <li><a href="#fale-conosco" title="Saiba mais" class="btn-saibaMais">Saiba mais</a></li>
             </ul>
           </nav>
 

@@ -55,11 +55,13 @@ input[type="email"] {
 
   div.wpcf7-response-output {
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 600px;
     text-align: center;
-    font-size: .9rem;
+    font-size: 1.25rem;
     border-radius: 5px;
     color: #fff;
+    padding: 1rem;
+    line-height: 1.4;
   }
 }
 
@@ -76,5 +78,6 @@ input[type="email"] {
 
 .wpcf7 form.failed .wpcf7-response-output, 
 .wpcf7 form.aborted .wpcf7-response-output {
-  background: #dc3232;
+  background: #46b450;
+  border-color: #fff;
 }

@@ -49,6 +49,20 @@
         color: $yellow-medium;
       }
     }
+
+    .btn-saibaMais {
+      color: #fff;
+      border-radius: 25px;
+      padding: .6rem 1.7rem .55rem;
+      text-align: center;
+      background: $yellow-medium;
+      transition: background 0.25s ease-in-out;
+
+      &:hover {
+        color: #fff;
+        background: $green-200;
+      }
+    }
   }
 
 
@@ -86,10 +100,15 @@
           color: #000;
         }
       }
+
+      .btn-saibaMais {
+        background: $green-200;
+      }
     }
   }
 }
 
+.btnSaibaMais_flutuante,
 .btnFlutuante_whatsapp {
   display: flex;
   align-items: center;
@@ -122,5 +141,36 @@
       font-size: .9rem;
       padding: .35rem .5rem;
     }
+  }
+}
+
+
+.btnSaibaMais_flutuante {
+  right: 1%;
+  bottom: 8%;
+  color: #fff;
+  background: $green-200;
+  border-radius: 30px;
+  display: block;
+  padding: .45rem 2rem .5rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-family: 'gothambold';
+  box-shadow: 0 2px 3px rgba($color: #000000, $alpha: .15);
+  @include transition();
+
+  i {
+    margin-right: .5rem;
+  }
+
+  &:hover {
+    color: #fff;
+    background: $yellow-medium;
+  }
+
+  // Responsive
+  @media screen and (max-width: 768px) {
+    bottom: 9%;
+    font-size: .9rem;
+    padding: .4rem 1.5rem;
   }
 }
